@@ -100,35 +100,30 @@ Follow these instructions to run the project locally.
 ### Installation
 
 1. Clone the repository:
-   <br>
 
 ```
 git clone https://github.com/Abhinavmohanp/onground-ai-assignment.git
 ```
 
 2. Navigate to the project directory:
-   <br>
 
 ```
-cd onground-ai-assignment/frontend
+cd onground-ai-assignment
 ```
 
 3. Install dependencies:
-   <br>
 
 ```
 npm install
 ```
 
 4. Start the development server:
-   <br>
 
 ```
 npm run dev
 ```
 
 5. Open the local URL displayed in your terminal, usually:
-   <br>
 
 ```
 http://localhost:5173
@@ -154,25 +149,27 @@ Deployment command:
 npm run deploy
 ```
 
-Live URL:
-
-[https://abhinavmohanp.github.io/onground-ai-assignment/](https://abhinavmohanp.github.io/onground-ai-assignment/)
+**Live URL:** [https://abhinavmohanp.github.io/onground-ai-assignment/](https://abhinavmohanp.github.io/onground-ai-assignment/)
 <br>
 
 ## Project Structure
 
 ```
 onground-ai-assignment/
-└──
-    ├── public/
-    ├── src/
-    │   ├── App.jsx
-    │   ├── App.css
-    │   ├── main.jsx
-    │   └── index.css
-    ├── index.html
-    ├── package.json
-    └── vite.config.js
+├── dist/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
 ```
 
 ## Implementation Notes
