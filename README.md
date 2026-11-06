@@ -1,78 +1,69 @@
 # On-Ground.ai – Call Centre Management Dashboard
 
 A React-based call centre management application designed to help sales and support teams manage leads, organise callbacks, track call outcomes, monitor performance, and communicate with team members.
-<br>
 
 ## Live Demo
 
-**Live Application:** [https://abhinavmohanp.github.io/onground-ai-assignment/](https://abhinavmohanp.github.io/onground-ai-assignment/)
+**Live Application:** https://abhinavmohanp.github.io/onground-ai-assignment/
 
-**GitHub Repository:** [https://github.com/Abhinavmohanp/onground-ai-assignment](https://github.com/Abhinavmohanp/onground-ai-assignment)
-<br>
+**GitHub Repository:** https://github.com/Abhinavmohanp/onground-ai-assignment
+
+## Demo Video
+
+**Application Demonstration:** [Insert your video link here]
 
 ## Features
 
-### 1\. Dashboard
-
+### 1. Dashboard
 - View key performance indicators, including OG Score, average handle time, CSAT, and queue count.
 - Monitor daily progress and earnings.
 - View waiting leads and pending tasks.
 
-### 2\. Lead Management
-
+### 2. Lead Management
 - View leads and their details.
 - Navigate between leads using Previous and Next controls.
 - View customer information, lead scores, phone numbers, and priority levels.
 - Navigate leads using pagination.
 
-### 3\. Calling and Call Management
-
-- Open the device phone dialer using a `tel:` link.
+### 3. Calling and Call Management
+- Open the device phone dialer using `tel:` links.
 - Record call outcomes:
-  <br>
-
-      * Interested
-      * Not Interested
-      * No Answer
-      * Call Back Later
-
+  - Interested
+  - Not Interested
+  - No Answer
+  - Call Back Later
 - View recorded call outcomes in the Recent section.
 - Access callback options for incoming missed calls.
 
-**Calling implementation:** The application uses device dialer integration through `tel:` links. Call outcomes are recorded within the application. It does not currently use a telephony backend to automatically track live call status or call duration.
-<br>
+**Calling Implementation:**
 
-### 4\. Plan
+The application uses device dialer integration through `tel:` links. Users can initiate calls through their device's supported phone application and record call outcomes within the application.
 
-The Plan section provides separate views for:
-<br>
+The current implementation does not include a telephony backend, browser-based calling, or automatic tracking of live call status and call duration.
 
-- Calls to make
-- Incoming calls
-- Recent calls
+### 4. Plan
+The Plan section provides three separate views:
+- Calls to Make
+- Incoming Calls
+- Recent Calls
 
-### 5\. Incoming Calls
-
+### 5. Incoming Calls
 - View missed calls ranked by expected lead value.
 - Initiate callbacks through the device dialer.
 
-### 6\. Recent Calls
-
+### 6. Recent Calls
 - Review recorded call outcomes.
 - View call history and lead information.
 
-### 7\. Practise a Call
-
+### 7. Practise a Call
 - Access a practice calling scenario.
 - Practise handling a customer conversation.
 
-### 8\. Calendar
-
+### 8. Calendar
 - View scheduled callback activities.
 - Add callback entries.
 
-### 9\. Pulse
-
+### 9. Pulse
 - View team and performance updates.
 - Respond to team requests under Needs Your Input.
 - Send messages through the team chat interface.
@@ -83,16 +74,15 @@ The Plan section provides separate views for:
 - **Programming Language:** JavaScript
 - **Styling:** CSS
 - **Build Tool:** Vite
+- **Icons:** Lucide React
 - **Version Control:** Git and GitHub
 - **Deployment:** GitHub Pages
 
 ## Getting Started
 
 Follow these instructions to run the project locally.
-<br>
 
 ### Prerequisites
-
 - Node.js
 - npm
 - Git
@@ -101,40 +91,39 @@ Follow these instructions to run the project locally.
 
 1. Clone the repository:
 
-```
+```bash
 git clone https://github.com/Abhinavmohanp/onground-ai-assignment.git
 ```
 
 2. Navigate to the project directory:
 
-```
+```bash
 cd onground-ai-assignment
 ```
 
 3. Install dependencies:
 
-```
+```bash
 npm install
 ```
 
 4. Start the development server:
 
-```
+```bash
 npm run dev
 ```
 
 5. Open the local URL displayed in your terminal, usually:
 
-```
+```text
 http://localhost:5173
 ```
 
 ### Production Build
 
 To create a production build:
-<br>
 
-```
+```bash
 npm run build
 ```
 
@@ -143,21 +132,18 @@ npm run build
 The application is deployed using GitHub Pages.
 
 Deployment command:
-<br>
 
-```
+```bash
 npm run deploy
 ```
 
-**Live URL:** [https://abhinavmohanp.github.io/onground-ai-assignment/](https://abhinavmohanp.github.io/onground-ai-assignment/)
-<br>
+**Live URL:** https://abhinavmohanp.github.io/onground-ai-assignment/
 
 ## Project Structure
 
-```
+```text
 onground-ai-assignment/
-├── dist/
-├── node_modules/
+│
 ├── public/
 ├── src/
 │   ├── assets/
@@ -165,11 +151,13 @@ onground-ai-assignment/
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
+│
 ├── index.html
 ├── package.json
 ├── package-lock.json
-├── README.md
-└── vite.config.js
+├── vite.config.js
+├── .gitignore
+└── README.md
 ```
 
 ## Implementation Notes
@@ -177,7 +165,12 @@ onground-ai-assignment/
 - Application interactions and call outcome records are managed on the frontend.
 - Sample lead and call information is used for demonstration.
 - The `tel:` integration opens the device's supported phone application.
+- Call outcomes are recorded within the application.
 - Automatic call tracking and telephony backend integration are not implemented.
+
+## AI Tools Used
+
+- **ChatGPT:** Used for development guidance, code explanations, debugging assistance, implementation suggestions, and documentation improvements.
 
 ## Future Improvements
 
@@ -192,4 +185,4 @@ onground-ai-assignment/
 
 **Abhinav Mohan P**
 
-GitHub: [https://github.com/Abhinavmohanp](https://github.com/Abhinavmohanp)
+**GitHub:** https://github.com/Abhinavmohanp
